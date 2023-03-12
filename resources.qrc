@@ -1,0 +1,16 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+    <file alias="close.svg">resources/close.svg</file>
+    <file alias="about.svg">resources/about.svg</file>
+    <file alias="application.svg">resources/application.svg</file>
+    <file alias="connect.svg">resources/connect.svg</file>
+    <file alias="disconnect.svg">resources/disconnect.svg</file>
+    <file alias="down.svg">resources/down.svg</file>
+    <file alias="home.svg">resources/home.svg</file>
+    <file alias="left.svg">resources/left.svg</file>
+    <file alias="reload.svg">resources/reload.svg</file>
+    <file alias="right.svg">resources/right.svg</file>
+    <file alias="up.svg">resources/up.svg</file>
+</qresource>
+</RCC>
+
