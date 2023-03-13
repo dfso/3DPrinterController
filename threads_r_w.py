@@ -13,9 +13,12 @@ class ReadThread(QtCore.QThread):
     def run(self):
         print(f'Thread de leitura {self} iniciada')
         while True:
-            data = self.dispositivo.readline().decode().strip()
-            self.signal.emit(str(data))  # pipe
-            print(data)
+            try:
+                data = self.dispositivo.readline().decode().strip()
+                self.signal.emit(str(data))
+                print(data)
+            except UnicodeDecodeError as err:
+                print(f'fudeu aqui: {err}')
 
     def stop_work(self):
         self.terminate()
